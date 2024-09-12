@@ -1,0 +1,58 @@
+{
+	"name": "foldercraft",
+	"displayName": "foldercraft",
+	"description": "Genera una estructura de carpetas y archivos desde un archivo JSON",
+	"version": "0.0.1",
+	"publisher": "instak1ll",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.createStructure"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.createStructure",
+				"title": "Crear Estructura desde JSON"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "extension.createStructure",
+					"when": "resourceLangId == json",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.50.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.0",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.8.1",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"typescript": "^4.0.3",
+		"vscode-test": "^1.4.0"
+	},
+	"license": "LICENSE.txt",
+	"repository": {
+		"type": "git",
+		"url": ""
+	}
+}
