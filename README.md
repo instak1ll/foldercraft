@@ -35,4 +35,8 @@ EJEMPLO:
 
 PASO 2: Guarda el json y encima de el haz clic derecho y selecciona "Crear Estructura"
 
+## Preview
+
+https://github.com/user-attachments/assets/556385f7-320c-4fb3-9713-ebeced19075b
+
 Si no os funciona contactarme por aqui: https://github.com/instak1ll
